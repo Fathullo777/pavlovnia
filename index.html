@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Дерево Павловнии</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Дерево Павловнии</h1>
+      <p>Узнайте больше о самом быстрорастущем дереве в мире!</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <!-- Секция роста дерева -->
+      <section class="growth">
+        <h2>Как быстро растет Павловния?</h2>
+        <div id="tree-container">
+          <svg id="tree-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 400">
+            <rect id="tree-trunk" x="90" y="200" width="20" height="200" fill="#8B4513"></rect>
+            <circle id="tree-crown" cx="100" cy="150" r="50" fill="#228B22"></circle>
+          </svg>
+        </div>
+        <div class="growth-info">
+          <p>Текущая высота: <span id="tree-height">50</span> см</p>
+          <p>Время роста: <span id="growth-time">16 месяцев (1 год 4 месяца)</span></p>
+          <input type="range" id="growth-slider" min="50" max="300" value="50">
+          <p id="carbon-absorbed">Углекислый газ поглощен: <span id="carbon-amount">0.00</span> </p>
+        </div>
+      </section>
+
+      <!-- Калькулятор воды для роста -->
+      <section id="water-calculator" class="calculator">
+        <h3>Калькулятор воды для роста дерева</h3>
+        <p>Вода, необходимая для роста дерева: <span id="water-needed">0</span> литров</p>
+      </section>
+
+      <!-- Шкала времени жизни дерева -->
+      <section id="timeline-container" class="timeline">
+        <h3>Шкала времени жизни дерева Павловнии</h3>
+        <ul>
+          <li>0-6 месяцев: Саженец, требуется полив и внимание.</li>
+          <li>6-12 месяцев: Активный рост, нуждается в хорошем солнечном свете.</li>
+          <li>1-2 года: Формирование ствола и кроны, минимальная обрезка.</li>
+          <li>2-5 лет: Дерево достигает своей максимальной высоты, можно начать использовать для древесины.</li>
+        </ul>
+      </section>
+
+      <!-- Челленджи для пользователя -->
+      <section id="challenge-container" class="challenge">
+        <h3>Челлендж: Сколько метров вырастет ваше дерево?</h3>
+        <p>Попробуйте вырастить ваше дерево до 5 метров за 12 месяцев!</p>
+        <p>Текущий прогресс: <span id="growth-progress">0</span> метров</p>
+        <button id="challenge-button">Начать челлендж</button>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Павловния. Все права защищены именем Фатхулло.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
